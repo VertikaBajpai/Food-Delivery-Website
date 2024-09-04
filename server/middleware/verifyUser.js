@@ -12,6 +12,7 @@ export const verifyToken = async (req, res, next) => {
     req.user = decode;
     return next();
   } catch (err) {
+
     next(err);
   }
 };
